@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import AVFoundation
 
 class CharacterViewController: UIViewController {
 
     var character : Character?
+    var audioPlayer : AVAudioPlayer?
     
     @IBOutlet weak var imageViewPhoto: UIImageView!
     @IBOutlet weak var labelName: UILabel!
@@ -43,11 +45,16 @@ class CharacterViewController: UIViewController {
             labelBirthYear.text = "Birth Year: \(currentCharacter.birthYear!)"
             labelGender.text = "Gender: \(currentCharacter.gender!)"
             imageViewPhoto.image = currentCharacter.imageCharacter()
+            if let soundCharacter = currentCharacter.sound?.sound {
+                audioPlayer = AVAudioPlayer(data: soundCharacter, error: nil)
+            }
         }
     }
     
     @IBAction func actionSelectorPlaySound(sender: AnyObject) {
-        
+        if audioPlayer != nil {
+            audioPlayer!.play()
+        }
     }
     
 }

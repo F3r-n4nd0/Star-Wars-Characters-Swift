@@ -19,6 +19,7 @@ enum CharacterAttributes: String {
 
 enum CharacterRelationships: String {
     case photo = "photo"
+    case sound = "sound"
 }
 
 @objc
@@ -108,6 +109,11 @@ class _Character: NSManagedObject {
     var photo: Photo?
 
     // func validatePhoto(value: AutoreleasingUnsafePointer<AnyObject>, error: NSErrorPointer) {}
+
+    @NSManaged
+    var sound: Sound?
+
+    // func validateSound(value: AutoreleasingUnsafePointer<AnyObject>, error: NSErrorPointer) {}
 
 }
 

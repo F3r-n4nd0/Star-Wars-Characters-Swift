@@ -81,6 +81,10 @@ class Character: _Character {
         Photo(context: self.managedObjectContext!, image: image, character: self)
     }
     
+    func loadSound(soundData : NSData?) {
+        Sound(context: self.managedObjectContext!, soundData: soundData, character: self)
+    }
+    
     internal func stringGroupByFirstInitial() -> String {
         if let currentName = self.name {
             return String(currentName[currentName.startIndex])

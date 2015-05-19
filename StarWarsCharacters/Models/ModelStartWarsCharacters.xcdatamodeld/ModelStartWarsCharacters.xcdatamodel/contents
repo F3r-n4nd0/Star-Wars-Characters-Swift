@@ -13,13 +13,19 @@
         <attribute name="skinColor" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="url" attributeType="String" syncable="YES"/>
         <relationship name="photo" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Photo" inverseName="character" inverseEntity="Photo" syncable="YES"/>
+        <relationship name="sound" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Sound" inverseName="character" inverseEntity="Sound" syncable="YES"/>
     </entity>
     <entity name="Photo" representedClassName="Photo" syncable="YES">
         <attribute name="image" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
         <relationship name="character" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Character" inverseName="photo" inverseEntity="Character" syncable="YES"/>
     </entity>
+    <entity name="Sound" representedClassName="Sound" syncable="YES">
+        <attribute name="sound" optional="YES" attributeType="Binary" syncable="YES"/>
+        <relationship name="character" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Character" inverseName="sound" inverseEntity="Character" syncable="YES"/>
+    </entity>
     <elements>
-        <element name="Character" positionX="-783" positionY="-54" width="128" height="223"/>
-        <element name="Photo" positionX="-54" positionY="135" width="128" height="73"/>
+        <element name="Character" positionX="-783" positionY="-54" width="128" height="240"/>
+        <element name="Photo" positionX="-54" positionY="135" width="128" height="75"/>
+        <element name="Sound" positionX="-576" positionY="63" width="128" height="75"/>
     </elements>
 </model>

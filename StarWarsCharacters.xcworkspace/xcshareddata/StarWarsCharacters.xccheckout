@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>68B21449-DB68-4B43-9CAB-4A223B84AF74</string>
+	<key>IDESourceControlProjectName</key>
+	<string>StarWarsCharacters</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EEDEB2ECC5269640A1E45092E5B25629684B4FBB</key>
+		<string>https://github.com/F3r-n4nd0/Star-Wars-Characters-Swift.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>StarWarsCharacters.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EEDEB2ECC5269640A1E45092E5B25629684B4FBB</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/F3r-n4nd0/Star-Wars-Characters-Swift.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EEDEB2ECC5269640A1E45092E5B25629684B4FBB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EEDEB2ECC5269640A1E45092E5B25629684B4FBB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>StarWarsCharacters</string>
+		</dict>
+	</array>
+</dict>
+</plist>

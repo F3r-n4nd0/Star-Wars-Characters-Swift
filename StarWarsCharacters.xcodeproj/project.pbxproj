@@ -32,6 +32,8 @@
 		ED5C86E41B09506A00E2CA8C /* NSDateISO860.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5C86E31B09506A00E2CA8C /* NSDateISO860.swift */; };
 		ED5C86E71B0981A400E2CA8C /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5C86E51B0981A400E2CA8C /* CharacterViewController.swift */; };
 		ED5C86E81B0981A400E2CA8C /* CharacterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED5C86E61B0981A400E2CA8C /* CharacterViewController.xib */; };
+		ED6860F01B0AF43100539464 /* _Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6860EF1B0AF43100539464 /* _Sound.swift */; };
+		ED6860F21B0AF43500539464 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6860F11B0AF43500539464 /* Sound.swift */; };
 		EDDA269A1B043DF400DC5D5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDA26991B043DF400DC5D5A /* AppDelegate.swift */; };
 		EDDA26A11B043DF500DC5D5A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDDA26A01B043DF500DC5D5A /* Images.xcassets */; };
 		EDDA26A41B043DF500DC5D5A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDDA26A21B043DF500DC5D5A /* LaunchScreen.xib */; };
@@ -77,7 +79,8 @@
 		ED5C86E31B09506A00E2CA8C /* NSDateISO860.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateISO860.swift; sourceTree = "<group>"; };
 		ED5C86E51B0981A400E2CA8C /* CharacterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
 		ED5C86E61B0981A400E2CA8C /* CharacterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CharacterViewController.xib; sourceTree = "<group>"; };
-		EDD0A9761B08E2BE00C15141 /* Settings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Settings.h; path = Models/Settings.h; sourceTree = "<group>"; };
+		ED6860EF1B0AF43100539464 /* _Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Sound.swift; sourceTree = "<group>"; };
+		ED6860F11B0AF43500539464 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 		EDDA26941B043DF400DC5D5A /* StarWarsCharacters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsCharacters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDDA26981B043DF400DC5D5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDDA26991B043DF400DC5D5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				ED3717331B045B8B00EC264A /* machine-generated */,
+				ED6860F11B0AF43500539464 /* Sound.swift */,
 				ED451D161B09AE65005117F0 /* Photo.swift */,
 				ED37172F1B044B3A00EC264A /* Character.swift */,
 				ED3717261B043F1E00EC264A /* ModelStartWarsCharacters.xcdatamodeld */,
@@ -131,6 +135,7 @@
 		ED3717331B045B8B00EC264A /* machine-generated */ = {
 			isa = PBXGroup;
 			children = (
+				ED6860EF1B0AF43100539464 /* _Sound.swift */,
 				ED451D141B09AE61005117F0 /* _Photo.swift */,
 				ED3717301B044B3A00EC264A /* _Character.swift */,
 			);
@@ -225,7 +230,6 @@
 				EDDA26A01B043DF500DC5D5A /* Images.xcassets */,
 				EDDA26A21B043DF500DC5D5A /* LaunchScreen.xib */,
 				EDDA26971B043DF400DC5D5A /* Supporting Files */,
-				EDD0A9761B08E2BE00C15141 /* Settings.h */,
 			);
 			path = StarWarsCharacters;
 			sourceTree = "<group>";
@@ -436,9 +440,11 @@
 				ED451D171B09AE65005117F0 /* Photo.swift in Sources */,
 				EDDA269A1B043DF400DC5D5A /* AppDelegate.swift in Sources */,
 				ED3717281B043F1E00EC264A /* ModelStartWarsCharacters.xcdatamodeld in Sources */,
+				ED6860F21B0AF43500539464 /* Sound.swift in Sources */,
 				EDFBF3B21B06E90C00CB5E90 /* Swapi.swift in Sources */,
 				ED451D151B09AE61005117F0 /* _Photo.swift in Sources */,
 				ED3717321B044B3A00EC264A /* _Character.swift in Sources */,
+				ED6860F01B0AF43100539464 /* _Sound.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

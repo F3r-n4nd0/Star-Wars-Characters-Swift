@@ -12,7 +12,7 @@ import CoreData
 import JSQCoreDataKit
 
 class Swapi {
-
+    
     let urlApi = "https://swapi.co/api"
     let character = "people"
     let countCharacters = 86
@@ -95,19 +95,32 @@ class Swapi {
         switch(index) {
         case 2:
             character.loadImage(UIImage(named: "c3po.jpg"))
+            character.loadSound(getSoundResource(name: "c3po", extencion: "caf"))
         case 3:
             character.loadImage(UIImage(named: "R2-D2.jpg"))
+            character.loadSound(getSoundResource(name: "r2-d2", extencion: "caf"))
         case 4:
             character.loadImage(UIImage(named: "darthVader.jpg"))
+            character.loadSound(getSoundResource(name: "vader", extencion: "caf"))
         case 13:
             character.loadImage(UIImage(named: "chewbacca.jpg"))
+            character.loadSound(getSoundResource(name: "chewbacca", extencion: "caf"))
         case 20:
             character.loadImage(UIImage(named: "yoda.jpg"))
+            character.loadSound(getSoundResource(name: "yoda", extencion: "caf"))
         case 21:
             character.loadImage(UIImage(named: "palpatine.jpg"))
+            character.loadSound(getSoundResource(name: "palpatine", extencion: "caf"))
         default: ()
         }
     }
     
+    
+    func getSoundResource(#name: String, extencion: String) -> NSData? {
+        if let path = NSBundle.mainBundle().pathForResource(name, ofType: extencion) {
+            return NSData(contentsOfFile: path)
+        }
+        return nil;
+    }
 }
 
